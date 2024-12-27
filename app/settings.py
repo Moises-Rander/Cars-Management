@@ -87,8 +87,8 @@ DATABASES = {
         'PASSWORD': 'Senh@Dj@ngoPostgr3s',
         'HOST': 'localhost',
         'PORT': '5432',
-        # 'USE_TZ': True, 
-        # 'TIME_ZONE': 'America/Fortaleza',
+        'USE_TZ': True, 
+        'TIME_ZONE': 'America/Fortaleza',
     }
 }
 
