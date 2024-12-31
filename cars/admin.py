@@ -1,7 +1,8 @@
 from django.contrib import admin
-from cars import models
+from cars.models import Car, Brand
 
 
+@admin.register(Brand)
 class BrandAdmin(admin.ModelAdmin):
     list_display = 'name',
     ordering = 'name',
@@ -10,13 +11,10 @@ class BrandAdmin(admin.ModelAdmin):
     list_display_links = 'name',
 
 
+@admin.register(Car)
 class CarAdmin(admin.ModelAdmin):
     list_display = 'model', 'brand', 'cost', 'value', 'model_year',
     ordering = 'model',
     list_filter = 'brand',
     search_fields = 'model', 'brand',
     list_display_links = 'model',
-
-
-admin.site.register(models.Brand, BrandAdmin)
-admin.site.register(models.Car, CarAdmin)
