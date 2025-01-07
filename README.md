@@ -17,10 +17,7 @@
 - Cadastro e verificação de usuários.
 - Upload e exibição de imagens dos veículos.
 - Validação de autenticação para acesso ao sistema.
-
-## Público-Alvo
-- **Vendedores**: Podem gerenciar o estoque de carros.
-- **Clientes**: Podem visualizar os carros disponíveis para venda.
+- Admin nativo do django para gerenciamento de tabelas
 
 ## Configuração Local
 Para configurar e rodar o projeto localmente:
@@ -77,6 +74,9 @@ O projeto segue a arquitetura MTV (Model-Template-View), típica de aplicações
 
 5. Tela de detalhes do carro
 - <img width="1710" alt="Captura de Tela 2025-01-07 às 09 08 23" src="https://github.com/user-attachments/assets/f3a44e3e-3b39-4777-a547-b292690cc1d4" />
+
+6. Tela do django Admin para gerenciamento de tabelas
+- <img width="1710" alt="Captura de Tela 2025-01-07 às 10 05 22" src="https://github.com/user-attachments/assets/613138fd-150a-41c8-92ea-ffdb03f13106" />
 
 ## Contato
 - **Email**: moisesrander@outlook.com
