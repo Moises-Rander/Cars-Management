@@ -1,84 +1,84 @@
-# Carros - Projeto Fullstack Django
+# Cars - Fullstack Django Project
 
-## Descrição
-"Carros" é um sistema de gerenciamento de estoque de carros, desenvolvido com Django e hospedado na AWS. Ele permite o cadastro, edição, visualização e exclusão de veículos, além de contar com funcionalidades de autenticação e gerenciamento de usuários.
+## Description
+"Cars" is an inventory management system for vehicles, developed with Django and hosted on AWS. It allows users to register, edit, view, and delete vehicles, as well as provides authentication and user management features.
 
-## Tecnologias Utilizadas
-- **Django**: Framework de desenvolvimento web.
-- **PostgreSQL**: Banco de dados relacional.
-- **AWS**: Hospedagem do sistema.
-  - **EC2**: Instância de servidor virtual.
-  - **IP Elástico**: Endereço IP fixo para acesso.
-  - **Volume de Backup**: Armazenamento adicional para emergências.
-- **Git**: Controle de versão.
+## Technologies Used
+- **Django**: Web development framework.
+- **PostgreSQL**: Relational database.
+- **AWS**: Hosting the system.
+  - **EC2**: Virtual server instance.
+  - **IP Elástico**: Fixed IP address for access.
+  - **Volume de Backup**: Additional storage for emergencies.
+- **Git**: Version control.
 
-## Funcionalidades
-- CRUD completo de cadastro de carros.
-- Cadastro e verificação de usuários.
-- Upload e exibição de imagens dos veículos.
-- Validação de autenticação para acesso ao sistema.
-- Admin nativo do django para gerenciamento de tabelas
+## Features
+- Complete CRUD functionality for vehicle registration.
+- User registration and authentication.
+- Upload and display images of vehicles.
+- Authentication validation for system access.
+- Native Django admin for table management.
 
-## Configuração Local
-Para configurar e rodar o projeto localmente:
-1. Clone o repositório:
+## Local Setup
+To configure and run the project locally:
+1. Clone the repository:
    ```bash
    git clone https://github.com/usuario/projeto-carros.git
-2. Entre no diretório do projeto:
+2. Navigate into the project directory:
    ```bash
    cd projeto-carros
-3. Crie um ambiente virtual e ative-o:
+3. Create and activate a virtual environment:
    ```bash
    python -m venv venv
    source venv/bin/activate  # No Windows: venv\Scripts\activate
-4. Instale as dependências:
+4. Install dependencies:
    ```bash
    pip install -r requirements.txt
-5. Crie um arquivo ".env" na raiz do seu projeto e declare a senha do seu banco de dados:
+5. Create an .env file at the root of your project and declare your database password:
    ```bash
    DATABASE_PASSWORD="Senha_Do_Seu_Banco_De_Dados_PostgreSQL"
    
-6. Rode as migrações e inicie o servidor:
+6. Run migrations and start the server:
    ```bash
    python manage.py migrate
    python manage.py runserver
 
-## Deploy da AWS
-O deploy foi realizado seguindo os passos abaixo:
-1. Criação de uma instância EC2 na AWS.
-2. Configuração de um IP elástico para acesso fixo.
-3. Configuração de firewall para acesso global.
-4. Configuração de volumes de backup para emergências.
-5. Linkagem do repositório GitHub ao servidor.
-6. Deploy do projeto na instância EC2.
+## AWS Deploy
+The deployment was done following these steps:
+1. Create an EC2 instance on AWS.
+2. Configure an Elastic IP for fixed access.
+3. Set up firewall rules for global access.
+4. Configure backup volumes for emergencies.
+5. Link the GitHub repository to the server.
+6. Deploy the project on the EC2 instance.
 
-## Arquitetura
-O projeto segue a arquitetura MTV (Model-Template-View), típica de aplicações Django, com as pastas estruturadas de forma organizada para facilitar a manutenção e a escalabilidade.
+## Architecture
+The project follows the MTV (Model-Template-View) architecture, typical of Django applications, with well-organized folders for easy maintenance and scalability.
 
-## Desafios e Soluções
-- **Hospedagem na AWS**: Enfrentou desafios ao configurar e gerenciar a instância EC2 pela primeira vez.
-- **Integração Frontend e Backend**: Trabalhou na criação de layouts de interface que se integrassem eficientemente com o backend.
+## Challenges and Solutions
+- **AWS Hosting**: Faced challenges configuring and managing the EC2 instance for the first time.
+- **Frontend and Backend Integration**: Worked on creating UI layouts that efficiently integrated with the backend.
 
-## Capturas de tela
-1. Tela de início do usuário logado
+## Screenshots
+1. Logged-in user homepage
 - <img width="1710" alt="Captura de Tela 2025-01-07 às 09 06 36" src="https://github.com/user-attachments/assets/a440ad9c-8bb8-4cb3-8963-83543c744be7" />
 
-2. Tela de login
+2. Login page
 - <img width="1710" alt="Captura de Tela 2025-01-07 às 09 07 12" src="https://github.com/user-attachments/assets/c0c0999d-64e4-478b-80a9-ec5487e3f030" />
 
-3. Tela de cadastro de usuários
+3. User registration page
 - <img width="1710" alt="Captura de Tela 2025-01-07 às 09 07 31" src="https://github.com/user-attachments/assets/53a7643c-7dfc-43c0-bb85-5e01e994240c" />
 
-4. Tela de cadastro de carros
+4. Car registration page
 - <img width="1710" alt="Captura de Tela 2025-01-07 às 09 08 00" src="https://github.com/user-attachments/assets/be42f9d3-acbb-483b-9cd1-af3badaec873" />
 
-5. Tela de detalhes do carro
+5. Car details page
 - <img width="1710" alt="Captura de Tela 2025-01-07 às 09 08 23" src="https://github.com/user-attachments/assets/f3a44e3e-3b39-4777-a547-b292690cc1d4" />
 
-6. Tela do django Admin para gerenciamento de tabelas
+6. Django Admin for table management
 - <img width="1710" alt="Captura de Tela 2025-01-07 às 10 05 22" src="https://github.com/user-attachments/assets/613138fd-150a-41c8-92ea-ffdb03f13106" />
 
-## Contato
+## Contact
 - **Email**: moisesrander@outlook.com
-- **Telefone**: +55 (98) 99123-2503
+- **Phone**: +55 (98) 99123-2503
 
